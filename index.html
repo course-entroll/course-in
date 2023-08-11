@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <head>
-    <title>
-        course Enrollment form
-    </title>
+    <title>student Enrolment form</title>
     <meta charset="utf-8"/>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
+    <link rel="stylesheet" href="assests/CSS/style.css"/>
 </head>
 <body>
-    <p>Course Enrollment </p>
-    <form>
+    <h1>STUDENT ENROLLEMENT COURSES</h1>
+    <div>
+        <form>
+        <p>
         <label for="first-name">First name: </label>
         <input type="text"
                placeholder="Enter your first name"
                id="first-name"
                name="first-name"
                required/>
+        </p>       
         <p>
         <label for="last-name">Last name: </label>
         <input type="text"
@@ -66,7 +68,7 @@
                     id="E-mail"
                     name="E-mail"
                     required
-                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
         </p>
         <p>
             <label for="dept">Department: </label>
@@ -137,19 +139,18 @@
                    id="5pm"
                    name="avail-slots"
                    checked/>
-            <label for="avail-slots"> timing 5pm</label>    
+            <label for="avail-slots">timing 5pm</label>    
         </p>
         <p>
             <label for="resume">Resume: </label>
         </p>
         <p>
-            <input type="file" name="upload" accept="pdf,application/vnd.ms-excel" />
+            <input type="file" name="upload" accept="pdf,application" />
         </p>
         <p>
-            <button type ="submit">Enroll</button>
+            <button type="submit">submit</button>
         </p>
-
-
+        </div>
     </form>
 </body>
 </html>
